@@ -6,7 +6,7 @@ $result = "Even";
 if ($num != 0) {
     $result = "Odd";
 }
-echo "The number is {$result}";
+echo "The number is {$result}\n";
 
 // Check Prime Number
 function isPrimeNumber($number) {

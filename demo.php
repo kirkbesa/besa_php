@@ -1,47 +1,47 @@
 <?php 
 
-// // Check Odd/Even
-// $num = readline("Enter an number: ");
-// $result = "Even";
-// if ($num != 0) {
-//     $result = "Odd";
-// }
-// echo "The number is {$result}";
+// Check Odd/Even
+$num = readline("Enter an number: ");
+$result = "Even";
+if ($num != 0) {
+    $result = "Odd";
+}
+echo "The number is {$result}";
 
-// // Check Prime Number
-// function isPrimeNumber($number) {
-//     if ($number < 2) {
-//         return "{$number} is not prime\n";
-//     }
+// Check Prime Number
+function isPrimeNumber($number) {
+    if ($number < 2) {
+        return "{$number} is not prime\n";
+    }
 
-//     if ($number == 2) {
-//         return "{$number} is prime\n";
-//     }
+    if ($number == 2) {
+        return "{$number} is prime\n";
+    }
 
-//      if ($number % 2 == 0) {
-//         return "{$number} is not prime\n";
-//     }
+     if ($number % 2 == 0) {
+        return "{$number} is not prime\n";
+    }
 
-//     $sqrtNumber = sqrt($number);
+    $sqrtNumber = sqrt($number);
     
-//     for ($i = 3; $i <= $sqrtNumber; $i += 2) {
-//         if ($number % $i == 0) {
-//             return "{$number} is not prime\n";
-//         }
-//     }
-//     return "{$number} is prime\n";
-// }
+    for ($i = 3; $i <= $sqrtNumber; $i += 2) {
+        if ($number % $i == 0) {
+            return "{$number} is not prime\n";
+        }
+    }
+    return "{$number} is prime\n";
+}
 
-// $userNumInput = readline("Enter a number: ");
-// if (!is_numeric($userNumInput)) {
-//     echo "Invalid Input";
-//     exit;
-// }
+$userNumInput = readline("Enter a number: ");
+if (!is_numeric($userNumInput)) {
+    echo "Invalid Input";
+    exit;
+}
 
-// $userNumInput = (int)$userNumInput;
-// for ($ctr = 0; $ctr <= $userNumInput; $ctr++) {
-//     echo isPrimeNumber($ctr);
-// }
+$userNumInput = (int)$userNumInput;
+for ($ctr = 0; $ctr <= $userNumInput; $ctr++) {
+    echo isPrimeNumber($ctr);
+}
 
 // Libraries
 require __DIR__ . '/vendor/autoload.php';
